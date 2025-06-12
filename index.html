@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>خديجة النشاد - معرض الأعمال</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #3b82f6;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(59,130,246,0.3);
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 0.05em;
+    }
+
+    header p {
+      margin: 6px 0;
+      font-weight: 400;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2563eb;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .project-item {
+      display: flex;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.07);
+      overflow: hidden;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-item:hover {
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+      transform: translateY(-6px);
+    }
+
+    .project-img {
+      flex: 0 0 200px;
+      overflow: hidden;
+    }
+
+    .project-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-item:hover .project-img img {
+      transform: scale(1.05);
+    }
+
+    .project-content {
+      padding: 25px 30px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .project-content h3 {
+      margin: 0 0 12px;
+      font-size: 1.5rem;
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    .project-content p {
+      margin: 0 0 20px;
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .project-content a {
+      align-self: start;
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(37,99,235,0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-content a:hover {
+      background-color: #1d4ed8;
+      box-shadow: 0 6px 15px rgba(29,78,216,0.6);
+    }
+
+    .footer-links {
+      text-align: center;
+      padding: 30px 15px;
+      background: #e0e7ff;
+      font-weight: 600;
+    }
+
+    .footer-links a {
+      color: #2563eb;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .project-item {
+        flex-direction: column;
+      }
+
+      .project-img {
+        flex: none;
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>خديجة محمد النشاد</h1>
+    <p>مهندسة تقنية معلومات | مطور Back-End</p>
+    <p>📧 khadeja137@gmail.com | 📞 +967 773798627</p>
+  </header>
+
+  <section>
+    <h2>أبرز المشاريع</h2>
+    <div class="project-list">
+
+      <article class="project-item">
+        <div class="project-img">
+          <img src="images/3.png" alt="منصة بث فيديو احترافية" />
+        </div>
+        <div class="project-content">
+          <h3>منصة RastArea</h3>
+        <p> نظام متكامل للاستراحة يحتوي على بث مباشر ومشاهدة مجانا خاص بالشبكات العامة</p>
+          <!-- <a href="#">عرض المشروع</a> -->
+           <a href="vod-platform.html">عرض المشروع</a>
+        </div>
+      </article>
+
+      <!-- <article class="project-item">
+        <div class="project-img">
+          <img src="images/subscription-platform.jpg" alt="نظام اشتراكات المحتوى" />
+        </div>
+        <div class="project-content">
+          <h3>نظام اشتراكات المحتوى</h3>
+          <p>نظام ذكي لإدارة الاشتراكات والدفع الإلكتروني.</p>
+          <a href="#">عرض المشروع</a>
+        </div>
+      </article> -->
+
+      <article class="project-item">
+        <div class="project-img">
+          <img src="images/00.jpg" alt="نظام التجهيزات الطبية" />
+        </div>
+        <div class="project-content">
+          <h3> نظام التجهيزات الطبية والصيانة</h3>
+          <p>متابعة الأجهزة الطبية والصيانة والمعايرة وادارة المخازن وتتبع QR والمناقصات.</p>
+          <a href="#">عرض المشروع</a>
+        </div>
+      </article>
+
+      <article class="project-item">
+        <div class="project-img">
+          <img src="images/dms.png" alt="نظام الأرشفة الذكية" />
+        </div>
+        <div class="project-content">
+          <h3>نظام الأرشفة الذكية</h3>
+          <p>أرشفة إلكترونية متقدمة بخصائص أمان وصلاحيات وتشفير. عالية</p>
+          <a href="#">عرض المشروع</a>
+        </div>
+      </article>
+
+      <article class="project-item">
+        <div class="project-img">
+          <img src="images/lms.png" alt="نظام التدريب التفاعلي" />
+        </div>
+        <div class="project-content">
+          <h3>نظام التدريب التفاعلي</h3>
+          <p>منصة تعليمية بفيديوهات، اختبارات، وتتبع أداء.</p>
+          <a href="#">عرض المشروع</a>
+        </div>
+      </article>
+
+      <article class="project-item">
+        <div class="project-img">
+          <img src="images/11.jpg" alt="النظام اليمني الصحي" />
+        </div>
+        <div class="project-content">
+          <h3>النظام اليمني للموارد الصحية</h3>
+          <p>نظام تفاعلي لرصد الموارد الصحية والخدمات ورفع التقارير والخرائط.</p>
+          <a href="#">عرض المشروع</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer-links">
+    <p>📂 <a href="https://github.com/2Khadeja" target="_blank" rel="noopener noreferrer">زيارة حساب GitHub</a></p>
+  </footer>
+
+</body>
+</html>
