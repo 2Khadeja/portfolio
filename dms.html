@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نظام أرشفة المستندات</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      background-color: #f9f9f9;
+      padding: 30px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+    .gallery-item {
+      text-align: center;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+      font-size: 16px;
+    }
+    h1 {
+      text-align: center;
+      color: #0b75c9;
+    }
+    p {
+      text-align: center;
+      color: #333;
+      margin-top: 10px;
+    }
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #0b75c9;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    ul {
+      margin: 10px 0 30px 0;
+      padding-right: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 12px 25px;
+      background: #0b75c9;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .section-title {
+      margin-top: 40px;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> نظام أرشفة المستندات</h1>
+    <p>
+      تم تطوير هذا النظام لتلبية احتياجات إدارة الحفظ والتوثيق لوزارة الصحة ، ويهدف إلى أتمتة دورة حياة المستندات كاملةً، بدءًا من التصنيف، مرورًا بالتشفير، وصولًا إلى التذكيرات والتسليم.
+    </p>
+
+    <h2 class="section-title"> التقنيات المستخدمة</h2>
+    <ul>
+      <li>Laravel 10 + PHP 8.2</li>
+      <li>قاعدة بيانات PostgreSQL</li>
+      <li>نموذج تسلسل هرمي للفئات والملفات</li>
+      <li>تشفير AES-256 لحماية البيانات</li>
+      <li>نظام صلاحيات متعدد المستويات</li>
+      <li>دعم التذكير بالتواريخ وتسليم المستندات</li>
+    </ul>
+
+    <h2 class="section-title"> الميزات الرئيسية</h2>
+    <ul>
+      <li>تصنيف المستندات ضمن فئات رئيسية وفرعية بشكل شجري</li>
+      <li>تحميل وإدارة أنواع متعددة من الملفات (PDF, Word, Excel...)</li>
+      <li>إمكانية إضافة ملاحظات وتعليقات على كل مستند</li>
+      <li>نظام تتبع لتواريخ الإدخال والتحديث والتسليم</li>
+      <li>تنبيهات تلقائية للمستندات الهامة أو المتأخرة</li>
+      <li>صلاحيات تفصيلية حسب الدور (مشرف، موظف، قارئ...)</li>
+    </ul>
+
+    <h2 class="section-title"> معرض صور المشروع</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/archive-1.png" alt="لوحة التحكم">
+        <p>لوحة التحكم</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/archive-2.png" alt="واجهة المستندات">
+        <p>واجهة المستندات</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/archive-3.png" alt="تقارير تصنيف المستندات">
+        <p>تقارير تصنيف المستندات في التسلسل الهرمي</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/archive-4.png" alt="إضافة مستند">
+        <p>واجهة إضافة مستند جديد</p>
+      </div>
+    </div>
+
+    <a href="index.html" class="button">⬅  العودة إلى معرض الاعمال</a>
+  </div>
+</body>
+</html>
