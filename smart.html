@@ -107,6 +107,35 @@
       transform: scale(1.03);
     }
 
+    .importance {
+      background: rgba(0,0,0,0.6);
+      border-radius: 12px;
+      padding: 30px 40px;
+      margin: 50px auto;
+      max-width: 900px;
+      line-height: 1.7;
+      font-size: 18px;
+      color: #ddd;
+      box-shadow: 0 0 10px rgba(0,198,255,0.4);
+    }
+
+    .importance h2 {
+      color: #00c6ff;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .importance ul {
+      list-style-type: decimal;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .importance ul li {
+      margin-bottom: 10px;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
@@ -125,66 +154,41 @@
     <!-- <a href="#" class="button">ابدأ التجربة الآن</a> -->
   </header>
 
-  <!-- <section>
-    <h2>✨ الميزات الرئيسية</h2>
-    <div class="features">
-      <div class="card">
-        <h3>عرض ديناميكي</h3>
-        <p>قراءة تلقائية لجميع المجلدات والفيديوهات من القرص المحلي.</p>
-      </div>
-      <div class="card">
-        <h3>تصنيفات ذكية</h3>
-        <p>عرض المجلدات على شكل تصنيفات منظمة شبيهة بمنصات البث.</p>
-      </div>
-      <div class="card">
-        <h3>مشغل مدمج</h3>
-        <p>مشغل HTML5 ضمن نافذة Modal لتجربة مشاهدة متكاملة.</p>
-      </div>
-      <div class="card">
-        <h3>قائمة المفضلة</h3>
-        <p>إضافة الفيديوهات المفضلة محليًا باستخدام LocalStorage.</p>
-      </div>
-      <div class="card">
-        <h3>دعم الصور المصغرة</h3>
-        <p>عرض صور مصغرة تلقائيًا لكل فيديو لواجهة أكثر جاذبية.</p>
-      </div>
-      <div class="card">
-        <h3>بحث لحظي</h3>
-        <p>نظام بحث سريع بدون إعادة تحميل الصفحة.</p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>🛠️ التقنيات المستخدمة</h2>
-    <div class="technologies">
-      <div class="card"><h3>django</h3><p>قراءة المجلدات والفيديوهات بشكل ديناميكي.</p></div>
-      <div class="card"><h3>JavaScript + AJAX</h3><p>عرض تفاعلي بدون تحديث الصفحة.</p></div>
-      <div class="card"><h3>Bootstrap + CSS</h3><p>تصميم واجهة متجاوبة وجذابة.</p></div>
-      <div class="card"><h3>Animate.css</h3><p>حركات وانتقالات سلسة للعناصر.</p></div>
-      <div class="card"><h3>LocalStorage</h3><p>تخزين المفضلات داخل المتصفح.</p></div>
-      <div class="card"><h3>XAMPP / Apache</h3><p>تشغيل المنصة على شبكة محلية.</p></div>
-    </div>
-  </section> -->
-
   <section>
     <h2>📸 صور من النظام</h2>
     <div class="gallery">
-      <img src="images/smart2.jpg" alt="الرئيسية"width="100" height="100" class="me-2">
+      <img src="images/smart2.jpg" alt="الرئيسية" width="100" height="100" class="me-2">
       <img src="images/smart6.jpg" alt="التصنيفات" width="100" height="100" class="me-2">
-      <img src="images/smart7.jpg" alt="مشغل الفيديو"width="100" height="100" class="me-2">
-      <img src="images/smart1.jpg" alt="نافذة التشغيل"width="100" height="100" class="me-2">
-      <img src="images/smart5.jpg" alt="المفضلة"width="100" height="100" class="me-2">
-      <img src="images/smart8.jpg" alt="البث المباشر"width="100" height="100" class="me-2">
-      <img src="images/smart3.jpg" alt="المفضلة"width="100" height="100" class="me-2">
-      <img src="images/smart4.jpg" alt="البث المباشر"width="100" height="100" class="me-2">
-      <img src="images/smart.png" alt="البث المباشر"width="100" height="100" class="me-2">
-
+      <img src="images/smart7.jpg" alt="مشغل الفيديو" width="100" height="100" class="me-2">
+      <img src="images/smart1.jpg" alt="نافذة التشغيل" width="100" height="100" class="me-2">
+      <img src="images/smart5.jpg" alt="المفضلة" width="100" height="100" class="me-2">
+      <img src="images/smart8.jpg" alt="البث المباشر" width="100" height="100" class="me-2">
+      <img src="images/smart3.jpg" alt="المفضلة" width="100" height="100" class="me-2">
+      <img src="images/smart4.jpg" alt="البث المباشر" width="100" height="100" class="me-2">
+      <img src="images/smart.png" alt="البث المباشر" width="100" height="100" class="me-2">
     </div>
   </section>
-    <a href="index.html" class="button">⬅ رجوع للسابق</a>
 
- 
+  <section class="importance">
+    <h2>أهمية هذا المشروع المقترح للجهات التالية:</h2>
+
+    <h3>تساعد مستشفيات العيون في:</h3>
+    <ul>
+      <li>تخفيف الازدحام نظراً لسرعة التشخيص.</li>
+      <li>تسهيل عملية التشخيص ودقتها.</li>
+      <li>زيادة العائدات نظراً لمعالجة أكثر من شخص في اليوم.</li>
+      <li>الحد من أخطاء التشخيص الناجمة عن التشخيص العادي.</li>
+    </ul>
+
+    <h3>تساعد المرضى من خلال:</h3>
+    <ul>
+      <li>تقليل الوقت والجهد.</li>
+      <li>توفير المال نظراً لوضوح عملية الفحص.</li>
+      <li>الحد من المعاملات الكثيرة.</li>
+    </ul>
+  </section>
+
+  <a href="index.html" class="button">⬅ رجوع للسابق</a>
 
 </body>
 </html>
